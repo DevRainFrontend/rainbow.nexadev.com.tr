@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rainbow.dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .text-muted {
+            color: #737373;
+        }
+        .border-subtle {
+            border-color: #262626;
+        }
+        .link-underline {
+            position: relative;
+        }
+        .link-underline::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        .link-underline:hover::after {
+            width: 100%;
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-sm border-b border-subtle">
+        <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="mono text-sm font-medium tracking-tight">rainbow.dev</a>
+            <div class="flex items-center gap-8 text-sm">
+                <a href="#about" class="text-muted hover:text-white transition-colors">hakkımda</a>
+                <a href="#skills" class="text-muted hover:text-white transition-colors">yetenekler</a>
+                <a href="#community" class="text-muted hover:text-white transition-colors">topluluk</a>
+                <a href="#projects" class="text-muted hover:text-white transition-colors">projeler</a>
+                <a href="#contact" class="text-muted hover:text-white transition-colors">iletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-1 pt-32 pb-20 px-6">
+        <div class="max-w-3xl mx-auto space-y-32">
+
+            <section class="fade-in">
+                <h1 class="text-4xl md:text-5xl font-light tracking-tight mb-6">
+                    Merhaba, ben <span class="font-medium">rainbow</span>.
+                </h1>
+                <p class="text-lg text-muted leading-relaxed max-w-xl">
+                    Backend geliştirme, otomasyon sistemleri ve dijital projeler üzerinde çalışıyorum.
+                </p>
+                
+                <div class="mt-8 flex items-center gap-4 text-sm">
+                    <a href="mailto:rainbow.dev@outlook.com.tr" class="mono text-muted hover:text-white transition-colors flex items-center gap-2">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        rainbow.dev@outlook.com.tr
+                    </a>
+                    <span class="text-subtle">/</span>
+                    <a href="https://github.com/rainbowdev-backend" target="_blank" class="mono text-muted hover:text-white transition-colors flex items-center gap-2">
+                        <i data-lucide="github" class="w-4 h-4"></i>
+                        github
+                    </a>
+                </div>
+            </section>
+
+            <section id="about" class="fade-in">
+                <h2 class="mono text-xs uppercase tracking-widest text-muted mb-8">01. hakkımda</h2>
+                
+                <div class="space-y-6 text-muted leading-relaxed">
+                    <p>
+                        Backend geliştirme, otomasyon sistemleri ve dijital projeler üzerinde çalışıyorum. 
+                        Yazılım ve sistem çözümleri üretirken hem kullanıcı deneyimini hem de teknik verimliliği önceliyorum.
+                    </p>
+                </div>
+            </section>
+
+            <section id="skills" class="fade-in">
+                <h2 class="mono text-xs uppercase tracking-widest text-muted mb-8">02. yetenekler</h2>
+                
+                <div class="space-y-6 text-muted leading-relaxed">
+                    <p>
+                        HTML, CSS, JavaScript, PHP, Python ve Linux tabanlı sistemlerde üretim yapabiliyorum. 
+                        Ayrıca Raspberry Pi ve Ubuntu/Arch tabanlı projelerde deneyim sahibiyim.
+                    </p>
+                </div>
+
+                <div class="mt-10 flex flex-wrap gap-3">
+                    <span class="mono text-xs px-3 py-1.5 border border-subtle rounded-full text-muted">HTML</span>
+                    <span class="mono text-xs px-3 py-1.5 border border-subtle rounded-full text-muted">CSS</span>
+                    <span class="mono text-xs px-3 py-1.5 border border-subtle rounded-full text-muted">JavaScript</span>
+                    <span class="mono text-xs px-3 py-1.5 border border-subtle rounded-full text-muted">PHP</span>
+                    <span class="mono text-xs px-3 py-1.5 border border-subtle rounded-full text-muted">Python</span>
+                    <span class="mono text-xs px-3 py-1.5 border border-subtle rounded-full text-muted">Linux</span>
+                    <span class="mono text-xs px-3 py-1.5 border border-subtle rounded-full text-muted">Raspberry Pi</span>
+                    <span class="mono text-xs px-3 py-1.5 border border-subtle rounded-full text-muted">Ubuntu</span>
+                    <span class="mono text-xs px-3 py-1.5 border border-subtle rounded-full text-muted">Arch</span>
+                </div>
+            </section>
+
+            <section id="community" class="fade-in">
+                <h2 class="mono text-xs uppercase tracking-widest text-muted mb-8">03. topluluk</h2>
+                
+                <div class="space-y-6 text-muted leading-relaxed mb-8">
+                    <p>
+                        Türkiye Minecraft Topluluğu, Rainbow's ADS ve Nexa Development gibi Discord sunucularını yönetiyorum; 
+                        topluluk yönetimi, reklam altyapıları ve botlist sistemlerini geliştiriyorum.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <a href="https://discord.gg/2EYKV4269F" target="_blank" class="flex items-center justify-between p-4 border border-subtle rounded-lg hover:border-white/30 transition-colors group">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="users" class="w-5 h-5 text-muted"></i>
+                            <span>Türkiye Minecraft Topluluğu</span>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4 text-muted group-hover:text-white transition-colors"></i>
+                    </a>
+
+                    <a href="https://discord.gg/BRussV5SkA" target="_blank" class="flex items-center justify-between p-4 border border-subtle rounded-lg hover:border-white/30 transition-colors group">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="megaphone" class="w-5 h-5 text-muted"></i>
+                            <span>Rainbow's ADS</span>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4 text-muted group-hover:text-white transition-colors"></i>
+                    </a>
+
+                    <a href="https://discord.gg/DCRk7KB5gG" target="_blank" class="flex items-center justify-between p-4 border border-subtle rounded-lg hover:border-white/30 transition-colors group">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="bot" class="w-5 h-5 text-muted"></i>
+                            <span>Free Botlist</span>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4 text-muted group-hover:text-white transition-colors"></i>
+                    </a>
+
+                    <a href="https://discord.gg/nexadevelopment" target="_blank" class="flex items-center justify-between p-4 border border-subtle rounded-lg hover:border-white/30 transition-colors group">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="code-2" class="w-5 h-5 text-muted"></i>
+                            <span>Nexa Development</span>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4 text-muted group-hover:text-white transition-colors"></i>
+                    </a>
+                </div>
+            </section>
+
+            <section id="projects" class="fade-in">
+                <h2 class="mono text-xs uppercase tracking-widest text-muted mb-8">04. projeler</h2>
+                
+                <div class="space-y-6 text-muted leading-relaxed mb-8">
+                    <p>
+                        AvocadoBOT ile başlayan bot geliştirme sürecim Rainbow botu ile devam ediyor. 
+                        Bot sistemleri, reklam altyapıları ve botlist projeleri üzerinde aktif olarak çalışıyorum.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-6 border border-subtle rounded-lg">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="bot" class="w-5 h-5 text-muted"></i>
+                            <h3 class="font-medium">AvocadoBOT</h3>
+                        </div>
+                        <p class="text-sm text-muted">Bot geliştirme sürecimin başlangıç projesi.</p>
+                    </div>
+
+                    <div class="p-6 border border-subtle rounded-lg">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="sparkles" class="w-5 h-5 text-muted"></i>
+                            <h3 class="font-medium">Rainbow Bot</h3>
+                        </div>
+                        <p class="text-sm text-muted">Mevcut aktif bot projem.</p>
+                    </div>
+
+                    <div class="p-6 border border-subtle rounded-lg">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="layout-grid" class="w-5 h-5 text-muted"></i>
+                            <h3 class="font-medium">Botlist Sistemleri</h3>
+                        </div>
+                        <p class="text-sm text-muted">Discord bot listeleme platformları.</p>
+                    </div>
+
+                    <div class="p-6 border border-subtle rounded-lg">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="megaphone" class="w-5 h-5 text-muted"></i>
+                            <h3 class="font-medium">Reklam Altyapıları</h3>
+                        </div>
+                        <p class="text-sm text-muted">Topluluk reklam sistemleri.</p>
+                    </div>
+                </div>
+            </section>
+
+          <section id="minas" class="fade-in">
+                <h2 class="mono text-xs uppercase tracking-widest text-muted mb-8">05. MINAS</h2>
+                
+                <div class="space-y-4">
+                    <h2>🌟MİNAS 🌟 </h2>
+
+<p>Herkese selam!</p>
+<p>Discord’da sıradan sunuculardan sıkıldıysan, gerçek anlamda aktif, kaliteli ve güçlü bir topluluk arıyorsan MİNAS tam sana göre.</p>
+
+ <p>MİNAS, sohbetin asla bitmediği, insanların gerçekten tanıştığı ve topluluk hissinin yaşandığı public bir Discord sunucusudur.</p>
+
+<h3>✨ MİNAS’TA SENİ NELER BEKLİYOR?</h3>
+
+<p>💬 Aktif Sohbet Gün boyu canlı chat , Gece muhabbetleri ,Samimi toxic olmayan ortam</p>
+
+<p>🎉 Düzenli Etkinlikler & Çekilişler , Oyun turnuvaları , Konserler</p>
+
+<p>👑 Aktif & Samimi  Yetkili Ekibi</p>
+
+<p>Adil yönetim , Sunucu düzeni ve disiplin</p>
+
+<p>🚀 MİNAS yeni kuruldu ama hedefi büyük. Bugünden katılanlar, yarının en eski üyeleri olacak.</p>
+
+<p>☄️  Eğer sen de Kaliteli bir topluluk arıyorsan MİNAS seni bekliyor.</p>
+
+<p>🔗 hemen katıl: <a href="https://discord.gg/minas">.gg/minas</a></p>
+</div>
+          </section>
+           <section id="contact" class="fade-in">
+                <h2 class="mono text-xs uppercase tracking-widest text-muted mb-8">06. iletişim</h2>
+                
+                <p class="text-muted mb-8 max-w-md">
+                    Projeler, iş birliği veya teknik iletişim için ulaşabilirsiniz.
+                </p>
+
+                <div class="space-y-4">
+                    <a href="mailto:rainbow.dev@outlook.com.tr" class="flex items-center gap-3 text-muted hover:text-white transition-colors group">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                        <span class="link-underline">rainbow.dev@outlook.com.tr</span>
+                    </a>
+
+                    <a href="https://github.com/rainbowdev-backend" target="_blank" class="flex items-center gap-3 text-muted hover:text-white transition-colors group">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                        <span class="link-underline">GitHub</span>
+                    </a>
+
+                    <a href="https://open.spotify.com/user/op1pl1i1d3n2yyqkxfjxjgkgl" target="_blank" class="flex items-center gap-3 text-muted hover:text-white transition-colors group">
+                        <i data-lucide="music" class="w-5 h-5"></i>
+                        <span class="link-underline">Spotify</span>
+                    </a>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-subtle">
+                    <p class="text-sm text-muted mb-4">Discord Sunucuları:</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://discord.gg/2EYKV4269F" target="_blank" class="mono text-xs text-muted hover:text-white transition-colors">Türkiye Minecraft Topluluğu</a>
+                        <a href="https://discord.gg/BRussV5SkA" target="_blank" class="mono text-xs text-muted hover:text-white transition-colors">Rainbow's ADS</a>
+                        <a href="https://discord.gg/DCRk7KB5gG" target="_blank" class="mono text-xs text-muted hover:text-white transition-colors">Free Botlist</a>
+                        <a href="https://discord.gg/nexadevelopment" target="_blank" class="mono text-xs text-muted hover:text-white transition-colors">Nexa Development</a>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer class="border-t border-subtle py-8 px-6">
+        <div class="max-w-3xl mx-auto flex items-center justify-between text-xs text-muted mono">
+            <span>© 2026 rainbow.dev</span>
+            <span>frontend & otomasyon</span>
+            <span>adım yoksa namım var</span>
+            <span>herkes kendine yakışanı yapsın</span>
+            <span>Co Founder Of Nexa Development</span>
+            
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
