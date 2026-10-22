@@ -21,8 +21,7 @@ Geliştiricinin yönettiği veya katkıda bulunduğu topluluklar:
 - [Rainbow's ADS](https://discord.gg/BRussV5SkA)
 - [Free Botlist](https://discord.gg/DCRk7KB5gG)
 - [Nexa Development](https://discord.gg/nexadevelopment)
-- [MİNAS](https://discord.gg/minas)
-
+  
 ## 💻 Projeler
 
 Aktif olarak geliştirilen projeler:
