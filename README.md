@@ -33,5 +33,5 @@ Aktif olarak geliştirilen projeler:
 ## 📬 İletişim
 
 - **E-posta:** rainbow.dev@outlook.com.tr
-- **GitHub:** [rainbowdev-backend](https://github.com/rainbowdev-backend)
-- **Spotify:** [rainbow](https://open.spotify.com/user/op1pl1i1d3n2yyqkxfjxjgkgl)
+- **GitHub:** [DevRainFrontend](https://github.com/DevRainFrontend)
+- **Spotify:** [Spotify](https://open.spotify.com/user/op1pl1i1d3n2yyqkxfjxjgkgl)
