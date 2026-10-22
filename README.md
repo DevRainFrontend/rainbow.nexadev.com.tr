@@ -1,6 +1,6 @@
-# rainbow.dev
+# Rainbow.dev Nexa Project
 
-Bu proje, **rainbow** adlı geliştiricinin kişisel web sitesidir. Backend geliştirme, otomasyon sistemleri ve dijital projeler üzerinde yoğunlaşan bir portföy sayfasıdır.
+Bu proje, **Rainbow.dev** adlı geliştiricinin kişisel web sitesidir. Backend geliştirme, otomasyon sistemleri ve dijital projeler üzerinde yoğunlaşan bir portföy sayfasıdır.
 
 ## 🚀 Proje Hakkında
 
